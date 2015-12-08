@@ -1,0 +1,19 @@
+{
+  "name": "aws-sdk-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk-promise": "0.0.2"
+  },
+  "devDependencies": {
+    "lambda-local": "0.0.6",
+    "nodemon": "^1.8.1"
+  }
+}
