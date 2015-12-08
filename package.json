@@ -1,18 +1,21 @@
 {
   "name": "aws-sdk-sandbox",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "aws-sdk-promise": "0.0.2"
   },
   "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0",
     "lambda-local": "0.0.6",
     "nodemon": "^1.8.1"
   }
