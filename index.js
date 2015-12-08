@@ -1,11 +1,11 @@
-const auth           = require('./lib/auth');
-const requestHandler = require('./lib/requestHandler');
+var auth           = require('./lib/auth');
+var requestHandler = require('./lib/requestHandler');
 
 exports.handler = function(event, context) {
-  const raw_data  = event.text.match(/(lgtm\:\s*)(.*)/)[2];
-  const command   = raw_data.split('+')[0];
-  const options   = raw_data.split('+').slice(1);
-  const token     = event.token;
+  var raw_data  = event.text.match(/(lgtm\:\s*)(.*)/)[2];
+  var command   = raw_data.split('+')[0];
+  var options   = raw_data.split('+').slice(1);
+  var token     = event.token;
 
   // Authenticate by token
   if (auth(token)) {
