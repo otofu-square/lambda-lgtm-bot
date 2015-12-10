@@ -9,7 +9,15 @@ exports.handler = function(event, context) {
 
   // Authenticate by token
   if (auth(token)) {
-    context.done(null, requestHandler(command, options, context));
+    requestHandler(command, options, context).then(
+      function(req) {
+        context.done(null, {text: req});
+      },
+      function(err) {
+        context.done(null, {text: err});
+      }
+    );
+    // context.done(null, requestHandler(command, options, context));
   } else {
     context.done(null, {text: 'Auth Error.'});
   }
