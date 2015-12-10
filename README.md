@@ -11,18 +11,21 @@ Overview
 
 - node.js
 
+## Install
+
+```
+$ npm install
+```
+
 ## Usage
 
 ```
 $ npm run start
 or
 $ node index.js
-```
 
-## Install
-
-```
-$ npm install
+If you want to test this lambda function,
+$ lambda-local -l index.js -e test/ping.js
 ```
 
 ## Author
