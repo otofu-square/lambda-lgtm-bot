@@ -11,7 +11,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk-promise": "0.0.2"
+    "aws-sdk-promise": "0.0.2",
+    "dotenv": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^1.10.3",
