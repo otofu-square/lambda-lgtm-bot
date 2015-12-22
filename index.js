@@ -1,3 +1,4 @@
+require('dotenv').load();
 var auth = require('./lib/auth');
 var requestHandler = require('./lib/requestHandler');
 
@@ -17,7 +18,6 @@ exports.handler = function(event, context) {
         context.done(null, {text: err});
       }
     );
-    // context.done(null, requestHandler(command, options, context));
   } else {
     context.done(null, {text: 'Auth Error.'});
   }
