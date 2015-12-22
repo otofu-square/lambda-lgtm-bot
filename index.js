@@ -1,3 +1,4 @@
+require('dotenv').load();
 var auth = require('./lib/auth');
 var requestHandler = require('./lib/requestHandler');
 
